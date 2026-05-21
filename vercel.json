@@ -2,9 +2,9 @@
   "version": 2,
   "name": "artifact-visualizer-wa-bridge",
   "functions": {
-    "api/qr.js":      { "maxDuration": 30 },
-    "api/status.js":  { "maxDuration": 10 },
-    "api/send.js":    { "maxDuration": 30 },
+    "qr.js":      { "maxDuration": 30 },
+    "status.js":  { "maxDuration": 10 },
+    "send.js":    { "maxDuration": 30 },
   
   },
   "routes": [
