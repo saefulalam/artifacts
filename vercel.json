@@ -9,10 +9,5 @@
   },
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" }
-  ],
-  "env": {
-    "PHP_SERVER_URL":   "@php_server_url",
-    "WA_SESSION_KEY":   "@wa_session_key",
-    "BRIDGE_SECRET":    "@bridge_secret"
-  }
+  ]
 }
