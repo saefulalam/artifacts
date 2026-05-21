@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "artifact-visualizer-wa-bridge",
+  "functions": {
+    "api/qr.js":      { "maxDuration": 30 },
+    "api/status.js":  { "maxDuration": 10 },
+    "api/send.js":    { "maxDuration": 30 },
+    "api/webhook.js": { "maxDuration": 60 }
+  },
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" }
+  ],
+  "env": {
+    "PHP_SERVER_URL":   "@php_server_url",
+    "WA_SESSION_KEY":   "@wa_session_key",
+    "BRIDGE_SECRET":    "@bridge_secret"
+  }
+}
